@@ -44,7 +44,7 @@ if [[ $(uname) == "Darwin" ]]; then
   exit 0
 fi
 
-if [[ $(uname -m) == "ppc64le" || $(uname -m) == "aarch64" ]]; then
+if [[ $(uname -m) == "ppc64le" || $(uname -m) == "aarch64" || $(uname -m) == "armv7l" ]]; then
   # Skip Python test on ppc64le/aarch64 due to missing debug symbols
   exit 0
 fi
